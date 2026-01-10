@@ -52,7 +52,7 @@ Game bắn súng 2D platform đầu tiên của tôi, được phát triển b�
 
 ### Điều khiển mặc định:
 - **A/D hoặc ←/→**: Di chuyển trái/phải
-- **Space**: Nhảy
+- **Space**: Boosting
 - **Chuột trái**: Bắn
 - **ESC**: Pause game
 

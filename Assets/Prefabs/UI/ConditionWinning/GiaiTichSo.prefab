@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 750121713752401332}
   - component: {fileID: 4683299817244339332}
   - component: {fileID: 1340064922129150800}
-  - component: {fileID: 7518540763109379455}
   - component: {fileID: -3348882430227394770}
+  - component: {fileID: -6174765083089703208}
   m_Layer: 0
   m_Name: GiaiTichSo
   m_TagString: Untagged
@@ -106,18 +106,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9ec1c24b11f0af4d996ec1df2aca72d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FloatIntSpace
---- !u!114 &7518540763109379455
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3626383870857496940}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0039ac2c9f46b3444bb51187887f756e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GiaiTichSo
 --- !u!61 &-3348882430227394770
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -164,3 +152,15 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 24.479998, y: 32.64}
   m_EdgeRadius: 0
+--- !u!114 &-6174765083089703208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3626383870857496940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88582b8a1d0f0034a9090b3f4c9bb196, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GoalObject

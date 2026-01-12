@@ -1660,6 +1660,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NewMonoBehaviourScript
   moveSpeed: -1
+  defaultScrollSpeed: 1
 --- !u!1 &497045922
 GameObject:
   m_ObjectHideFlags: 0
@@ -2236,6 +2237,52 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 634307469}
   m_CullTransparentMesh: 1
+--- !u!1 &637003523
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 637003524}
+  - component: {fileID: 637003525}
+  m_Layer: 0
+  m_Name: Boss1Pool
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &637003524
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 637003523}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1637121071}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &637003525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 637003523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4e286dc464c76449b29cb7a661089d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ObjectPooler
+  prefab: {fileID: 3668919272955576520, guid: 322c86cd959dd894abad0e5b9f3cc8be, type: 3}
+  poolSize: 1
 --- !u!1 &670012374
 GameObject:
   m_ObjectHideFlags: 0
@@ -2899,6 +2946,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NewMonoBehaviourScript
   moveSpeed: -0.6
+  defaultScrollSpeed: 1
 --- !u!1 &909637344
 GameObject:
   m_ObjectHideFlags: 0
@@ -3300,6 +3348,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NewMonoBehaviourScript
   moveSpeed: -0.2
+  defaultScrollSpeed: 1
 --- !u!1 &1018651325
 GameObject:
   m_ObjectHideFlags: 0
@@ -3440,6 +3489,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NewMonoBehaviourScript
   moveSpeed: 0
+  defaultScrollSpeed: 1
 --- !u!1 &1084324251
 GameObject:
   m_ObjectHideFlags: 0
@@ -4544,12 +4594,12 @@ MonoBehaviour:
   - pool: {fileID: 956373199}
     spawnTimer: 0
     spawnInterval: 1
-    objectsPerWave: 10
+    objectsPerWave: 20
     spawnedObjectCount: 0
   - pool: {fileID: 956373199}
     spawnTimer: 0
-    spawnInterval: 1
-    objectsPerWave: 10
+    spawnInterval: 2
+    objectsPerWave: 15
     spawnedObjectCount: 0
   - pool: {fileID: 338746192}
     spawnTimer: 0
@@ -4558,8 +4608,13 @@ MonoBehaviour:
     spawnedObjectCount: 0
   - pool: {fileID: 2022957243}
     spawnTimer: 0
-    spawnInterval: 1
+    spawnInterval: 0.01
     objectsPerWave: 1
+    spawnedObjectCount: 0
+  - pool: {fileID: 956373199}
+    spawnTimer: 0
+    spawnInterval: 1
+    objectsPerWave: 15
     spawnedObjectCount: 0
 --- !u!4 &1356125994
 Transform:
@@ -4907,13 +4962,10 @@ MonoBehaviour:
   playerDirection: {x: 0, y: 0}
   moveSpeed: 2
   boosting: 0
-  energy: 25
   maxEnergy: 50
   energyRegen: 0.05
-  health: 0
-  maxHealth: 5
+  maxHealth: 10
   engineEffect: {fileID: 2102977320}
-  experience: 0
   currentLevel: 0
   maxLevel: 30
   playerLevels: 0a000000140000001e000000
@@ -5501,7 +5553,7 @@ Transform:
   m_GameObject: {fileID: 1637121070}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.30444, y: 0.4163, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5510,6 +5562,7 @@ Transform:
   - {fileID: 2059009545}
   - {fileID: 1428427259}
   - {fileID: 368768035}
+  - {fileID: 637003524}
   - {fileID: 338746191}
   - {fileID: 811791888}
   - {fileID: 1374242418}
@@ -6166,6 +6219,8 @@ MonoBehaviour:
   worldSpeed: 1
   adjustedWorldSpeed: 0
   critterCounter: 0
+  currentLevelIndex: 1
+  completedSceneName: Level_1_Completed
 --- !u!4 &1972592189
 Transform:
   m_ObjectHideFlags: 0

@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -11,6 +11,11 @@ public class GameManager : MonoBehaviour
 
     public int critterCounter;
     private ObjectPooler boss1Pool;
+
+    [Header("Level Settings")]
+    public int currentLevelIndex; 
+    public string completedSceneName;
+
     void Awake()
     {
         if (Instance == null)
@@ -90,5 +95,25 @@ public class GameManager : MonoBehaviour
         worldSpeed = speed;
     }
 
-    
+    public void WinLevel()
+    {
+        // 1. Lưu dữ liệu: Mở khóa màn tiếp theo (Level hiện tại + 1)
+        // Ví dụ: Đang chơi Level 4 -> Thắng -> Lưu unlocked level là 5
+        if (LocalDataManager.Instance != null)
+        {
+            LocalDataManager.Instance.UpdateLevel(currentLevelIndex + 1);
+            Debug.Log("Đã lưu tiến độ: Mở khóa level " + (currentLevelIndex + 1));
+        }
+
+        // 2. Chuyển sang màn hình Completed
+        if (!string.IsNullOrEmpty(completedSceneName))
+        {
+            SceneManager.LoadScene(completedSceneName);
+        }
+        else
+        {
+            Debug.LogWarning("Chưa nhập tên Scene Completed trong GameManager!");
+        }
+    }
+
 }

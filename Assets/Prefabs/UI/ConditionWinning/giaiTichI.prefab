@@ -9,10 +9,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7758013320002408882}
-  - component: {fileID: 2689259265053336278}
   - component: {fileID: 7125765706542222524}
   - component: {fileID: 6457363221408365310}
   - component: {fileID: 3436879547917474247}
+  - component: {fileID: -4076168083351406715}
   m_Layer: 0
   m_Name: giaiTichI
   m_TagString: Untagged
@@ -36,18 +36,6 @@ Transform:
   - {fileID: 100795743502107056}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2689259265053336278
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 77904555146596463}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0896822256e7fd74594bbbb79ce0eea7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GiaiTichI
 --- !u!212 &7125765706542222524
 SpriteRenderer:
   serializedVersion: 2
@@ -165,6 +153,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9ec1c24b11f0af4d996ec1df2aca72d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FloatIntSpace
+--- !u!114 &-4076168083351406715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 77904555146596463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88582b8a1d0f0034a9090b3f4c9bb196, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GoalObject
 --- !u!1001 &4615531893034308607
 PrefabInstance:
   m_ObjectHideFlags: 0

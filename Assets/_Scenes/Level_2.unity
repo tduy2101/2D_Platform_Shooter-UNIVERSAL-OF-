@@ -1752,6 +1752,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NewMonoBehaviourScript
   moveSpeed: -1
+  defaultScrollSpeed: 1
 --- !u!1 &497045922
 GameObject:
   m_ObjectHideFlags: 0
@@ -2991,6 +2992,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NewMonoBehaviourScript
   moveSpeed: -0.6
+  defaultScrollSpeed: 1
 --- !u!1 &909637344
 GameObject:
   m_ObjectHideFlags: 0
@@ -3392,6 +3394,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NewMonoBehaviourScript
   moveSpeed: -0.2
+  defaultScrollSpeed: 1
 --- !u!1 &1018651325
 GameObject:
   m_ObjectHideFlags: 0
@@ -3532,6 +3535,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NewMonoBehaviourScript
   moveSpeed: 0
+  defaultScrollSpeed: 1
 --- !u!1 &1084324251
 GameObject:
   m_ObjectHideFlags: 0
@@ -4635,23 +4639,28 @@ MonoBehaviour:
   waves:
   - pool: {fileID: 956373199}
     spawnTimer: 0
-    spawnInterval: 1
-    objectsPerWave: 5
+    spawnInterval: 0.5
+    objectsPerWave: 20
     spawnedObjectCount: 0
   - pool: {fileID: 338746192}
     spawnTimer: 0
-    spawnInterval: 0.1
+    spawnInterval: 0.5
     objectsPerWave: 30
     spawnedObjectCount: 0
   - pool: {fileID: 338746192}
     spawnTimer: 0
-    spawnInterval: 0.05
+    spawnInterval: 0.1
     objectsPerWave: 40
     spawnedObjectCount: 0
   - pool: {fileID: 415065443}
     spawnTimer: 0
     spawnInterval: 15
     objectsPerWave: 1
+    spawnedObjectCount: 0
+  - pool: {fileID: 956373199}
+    spawnTimer: 0
+    spawnInterval: 1
+    objectsPerWave: 15
     spawnedObjectCount: 0
 --- !u!4 &1356125994
 Transform:
@@ -5062,13 +5071,10 @@ MonoBehaviour:
   playerDirection: {x: 0, y: 0}
   moveSpeed: 2
   boosting: 0
-  energy: 25
   maxEnergy: 50
   energyRegen: 0.05
-  health: 0
   maxHealth: 5
   engineEffect: {fileID: 2102977320}
-  experience: 0
   currentLevel: 0
   maxLevel: 30
   playerLevels: 0a000000140000001e000000
@@ -6323,6 +6329,8 @@ MonoBehaviour:
   worldSpeed: 1
   adjustedWorldSpeed: 0
   critterCounter: 0
+  currentLevelIndex: 2
+  completedSceneName: Level_2_Completed
 --- !u!4 &1972592189
 Transform:
   m_ObjectHideFlags: 0

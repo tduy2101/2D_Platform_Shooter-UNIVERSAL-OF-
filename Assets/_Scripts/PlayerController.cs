@@ -1,4 +1,4 @@
-using NUnit.Framework;
+﻿using NUnit.Framework;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -17,16 +17,16 @@ public class PlayerController : MonoBehaviour
 
     public bool boosting = false;
 
-    [SerializeField] private float energy;
+    private float energy;
     [SerializeField] private float maxEnergy;
     [SerializeField] private float energyRegen;
 
-    [SerializeField] private float health;
+    private float health;
     [SerializeField] private float maxHealth;
     private ObjectPooler destroyEffectPool;
     [SerializeField] private ParticleSystem engineEffect;
 
-    [SerializeField] private int experience;
+    private int experience;
     [SerializeField] private int currentLevel;
     [SerializeField] private int maxLevel;
     [SerializeField] private List<int> playerLevels;
@@ -177,6 +177,12 @@ public class PlayerController : MonoBehaviour
             destroyEffect.transform.position = transform.position;
             destroyEffect.transform.rotation = transform.rotation;
             destroyEffect.SetActive(true);
+
+            if (LocalDataManager.Instance != null)
+            {
+                // currentLevel là biến level bạn đang có trong PlayerController
+                LocalDataManager.Instance.UpdateLevel(currentLevel);
+            }
 
             GameManager.Instance.GameOver();
             AudioManager.Instance.PlaySound(AudioManager.Instance.Ice);

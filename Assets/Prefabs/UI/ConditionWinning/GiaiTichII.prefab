@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 770615907906343603}
   - component: {fileID: 545738457178575252}
-  - component: {fileID: 8390390425307708522}
   - component: {fileID: 4930315564071271830}
   - component: {fileID: 2476490449343487391}
+  - component: {fileID: -1463374806613073690}
   m_Layer: 0
   m_Name: GiaiTichII
   m_TagString: Untagged
@@ -94,18 +94,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!114 &8390390425307708522
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 962207319196072114}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a7e912edc4b39054dbcb54c74e94f661, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GiaiTichII
 --- !u!61 &4930315564071271830
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -164,3 +152,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9ec1c24b11f0af4d996ec1df2aca72d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FloatIntSpace
+--- !u!114 &-1463374806613073690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 962207319196072114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88582b8a1d0f0034a9090b3f4c9bb196, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GoalObject

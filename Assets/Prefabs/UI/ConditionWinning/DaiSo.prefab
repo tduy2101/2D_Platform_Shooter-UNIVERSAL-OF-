@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 3136152941516827067}
   - component: {fileID: 4000035818939264692}
   - component: {fileID: 6441820216794627645}
-  - component: {fileID: 4611827491045790993}
   - component: {fileID: -68532870889286285}
+  - component: {fileID: -308052125333582035}
   m_Layer: 0
   m_Name: DaiSo
   m_TagString: Untagged
@@ -106,18 +106,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9ec1c24b11f0af4d996ec1df2aca72d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FloatIntSpace
---- !u!114 &4611827491045790993
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5467520289631521978}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a6b6f0694da17cf478c61f44b74974c6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DaiSo
 --- !u!61 &-68532870889286285
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -164,3 +152,15 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 19.199999, y: 28.722862}
   m_EdgeRadius: 0
+--- !u!114 &-308052125333582035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5467520289631521978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88582b8a1d0f0034a9090b3f4c9bb196, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GoalObject

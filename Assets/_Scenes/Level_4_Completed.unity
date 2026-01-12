@@ -579,6 +579,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7238b52bf8c4faf4d81e214a9b760a5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MenuManager
+  dashboardPanel: {fileID: 0}
+  backGround: {fileID: 0}
+  menuCanvas: {fileID: 0}
 --- !u!4 &389256301
 Transform:
   m_ObjectHideFlags: 0
@@ -1095,7 +1098,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3283687290527155084, guid: ef87df945ea93384489ee79812ef5528, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: QuitGame
+      value: ReturnToMainMenu
       objectReference: {fileID: 0}
     - target: {fileID: 3283687290527155084, guid: ef87df945ea93384489ee79812ef5528, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName

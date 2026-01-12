@@ -230,52 +230,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 15472097}
   m_CullTransparentMesh: 1
---- !u!1 &73411681
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 73411682}
-  - component: {fileID: 73411683}
-  m_Layer: 0
-  m_Name: Boss1Pool
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &73411682
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 73411681}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1637121071}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &73411683
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 73411681}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d4e286dc464c76449b29cb7a661089d9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ObjectPooler
-  prefab: {fileID: 3668919272955576520, guid: 322c86cd959dd894abad0e5b9f3cc8be, type: 3}
-  poolSize: 1
 --- !u!1 &74441075
 GameObject:
   m_ObjectHideFlags: 0
@@ -1753,31 +1707,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PhaseWeapon
   weaponLevel: 0
   stats:
-  - damage: 1
+  - damage: 0
     speed: 2
     size: 1
     amount: 1
     range: 1
-  - damage: 2
+  - damage: 10
     speed: 5
     size: 2
     amount: 2
     range: 2
-  - damage: 5
+  - damage: 15
     speed: 10
     size: 2.5
     amount: 3
     range: 2
-  - damage: 10
+  - damage: 20
     speed: 15
     size: 2.5
     amount: 5
     range: 2
-  damage: 1
-  speed: 1
-  size: 1
-  amount: 1
-  range: 1
+  damage: 12
+  speed: 12
+  size: 2
+  amount: 5
+  range: 3
   bulletPool: {fileID: 953311430}
 --- !u!1 &508871249
 GameObject:
@@ -2283,6 +2237,52 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 634307469}
   m_CullTransparentMesh: 1
+--- !u!1 &637003523
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 637003524}
+  - component: {fileID: 637003525}
+  m_Layer: 0
+  m_Name: Boss1Pool
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &637003524
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 637003523}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1637121071}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &637003525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 637003523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4e286dc464c76449b29cb7a661089d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ObjectPooler
+  prefab: {fileID: 3668919272955576520, guid: 322c86cd959dd894abad0e5b9f3cc8be, type: 3}
+  poolSize: 1
 --- !u!1 &670012374
 GameObject:
   m_ObjectHideFlags: 0
@@ -3022,52 +3022,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 909637344}
   m_CullTransparentMesh: 1
---- !u!1 &912419082
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 912419083}
-  - component: {fileID: 912419084}
-  m_Layer: 0
-  m_Name: DaiSo
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &912419083
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 912419082}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1637121071}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &912419084
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 912419082}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d4e286dc464c76449b29cb7a661089d9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ObjectPooler
-  prefab: {fileID: 5467520289631521978, guid: 0131e4873daf6cb4e9da645febb6b427, type: 3}
-  poolSize: 1
 --- !u!1 &953311428
 GameObject:
   m_ObjectHideFlags: 0
@@ -4639,33 +4593,28 @@ MonoBehaviour:
   waves:
   - pool: {fileID: 956373199}
     spawnTimer: 0
-    spawnInterval: 0.5
-    objectsPerWave: 40
-    spawnedObjectCount: 0
-  - pool: {fileID: 338746192}
-    spawnTimer: 0
-    spawnInterval: 0.8
-    objectsPerWave: 30
-    spawnedObjectCount: 0
-  - pool: {fileID: 1407601088}
-    spawnTimer: 0
-    spawnInterval: 0.1
-    objectsPerWave: 30
+    spawnInterval: 1
+    objectsPerWave: 20
     spawnedObjectCount: 0
   - pool: {fileID: 956373199}
     spawnTimer: 0
-    spawnInterval: 0.2
-    objectsPerWave: 50
+    spawnInterval: 2
+    objectsPerWave: 15
     spawnedObjectCount: 0
-  - pool: {fileID: 912419084}
+  - pool: {fileID: 338746192}
     spawnTimer: 0
-    spawnInterval: 1
+    spawnInterval: 1.5
+    objectsPerWave: 5
+    spawnedObjectCount: 0
+  - pool: {fileID: 2022957243}
+    spawnTimer: 0
+    spawnInterval: 0.01
     objectsPerWave: 1
     spawnedObjectCount: 0
   - pool: {fileID: 956373199}
     spawnTimer: 0
-    spawnInterval: 0.1
-    objectsPerWave: 10
+    spawnInterval: 1
+    objectsPerWave: 15
     spawnedObjectCount: 0
 --- !u!4 &1356125994
 Transform:
@@ -4805,69 +4754,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1399160766}
   m_CullTransparentMesh: 1
---- !u!1 &1407601086
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1407601087}
-  - component: {fileID: 1407601088}
-  - component: {fileID: 1407601089}
-  m_Layer: 0
-  m_Name: BeetlePool
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1407601087
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1407601086}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1637121071}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1407601088
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1407601086}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d4e286dc464c76449b29cb7a661089d9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ObjectPooler
-  prefab: {fileID: 6284789135786836787, guid: b81b26dd231fcb34b8145abec6b1286a, type: 3}
-  poolSize: 5
---- !u!114 &1407601089
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1407601086}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 82eaf75c6995b294a80f4c173e9b1f32, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Enemy
-  lives: 0
-  maxLives: 0
-  damage: 0
-  experienceToGive: 0
 --- !u!1 &1428427258
 GameObject:
   m_ObjectHideFlags: 0
@@ -5078,7 +4964,7 @@ MonoBehaviour:
   boosting: 0
   maxEnergy: 50
   energyRegen: 0.05
-  maxHealth: 5
+  maxHealth: 100
   engineEffect: {fileID: 2102977320}
   currentLevel: 0
   maxLevel: 30
@@ -5667,7 +5553,7 @@ Transform:
   m_GameObject: {fileID: 1637121070}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.30444, y: 0.4163, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5676,12 +5562,11 @@ Transform:
   - {fileID: 2059009545}
   - {fileID: 1428427259}
   - {fileID: 368768035}
+  - {fileID: 637003524}
   - {fileID: 338746191}
   - {fileID: 811791888}
   - {fileID: 1374242418}
-  - {fileID: 73411682}
-  - {fileID: 1407601087}
-  - {fileID: 912419083}
+  - {fileID: 2022957242}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1663813100
@@ -6331,11 +6216,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 026badbd9f6a50b4d8e0fe11e47b933f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
-  worldSpeed: 2
+  worldSpeed: 1
   adjustedWorldSpeed: 0
   critterCounter: 0
-  currentLevelIndex: 4
-  completedSceneName: Level_4_Completed
+  currentLevelIndex: 1
+  completedSceneName: Level_1_Completed
 --- !u!4 &1972592189
 Transform:
   m_ObjectHideFlags: 0
@@ -6426,6 +6311,52 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1997294873}
   m_CullTransparentMesh: 1
+--- !u!1 &2022957241
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2022957242}
+  - component: {fileID: 2022957243}
+  m_Layer: 0
+  m_Name: GiaiTichI
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2022957242
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2022957241}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2.30444, y: -0.4163, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1637121071}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2022957243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2022957241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4e286dc464c76449b29cb7a661089d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ObjectPooler
+  prefab: {fileID: 77904555146596463, guid: e63457d713181f34f9d007f398e50f0e, type: 3}
+  poolSize: 1
 --- !u!1 &2059009544
 GameObject:
   m_ObjectHideFlags: 0
